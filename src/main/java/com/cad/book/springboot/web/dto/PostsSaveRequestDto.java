@@ -1,7 +1,7 @@
 package com.cad.book.springboot.web.dto;
 
 
-import com.cad.book.springboot.domain.Posts;
+import com.cad.book.springboot.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

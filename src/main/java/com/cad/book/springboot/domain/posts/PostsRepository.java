@@ -1,4 +1,4 @@
-package com.cad.book.springboot.domain;
+package com.cad.book.springboot.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
