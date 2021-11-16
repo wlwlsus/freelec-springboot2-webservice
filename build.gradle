@@ -45,7 +45,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mustache')
 
     // Spring Security
-    compile('org.springframework.boot:spring-boot-start-oauth2-client')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+
 
     // Test
     testCompile('org.springframework.boot:spring-boot-starter-test')
