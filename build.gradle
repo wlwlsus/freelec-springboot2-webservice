@@ -41,6 +41,9 @@ dependencies {
     // H2-Database
     compile('com.h2database:h2')
 
+    // Session store
+    compile('org.springframework.session:spring-session-jdbc')
+
     // Mustache
     compile('org.springframework.boot:spring-boot-starter-mustache')
 
