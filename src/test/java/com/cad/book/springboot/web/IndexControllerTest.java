@@ -15,14 +15,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class IndexControllerTest {
 
   @Autowired
-  private TestRestTemplate testRestTemplate;
+  private TestRestTemplate restTemplate;
 
   @Test
-  public void 메인페이지_로딩() {
+  public void mainLoading() {
     // when
-    String body = this.testRestTemplate.getForObject("/", String.class);
+    String body = this.restTemplate.getForObject("/", String.class);
 
     // then
-    assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
+    assertThat(body).contains("스프링");
   }
 }
