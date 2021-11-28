@@ -19,7 +19,7 @@ public class SwaggerConfig {
     return new Docket(DocumentationType.SWAGGER_2)
             .useDefaultResponseMessages(false)
             .select()
-            .apis(RequestHandlerSelectors.any())
+            .apis(RequestHandlerSelectors.basePackage("com.cad.book.springboot.web"))
             .paths(PathSelectors.any())
             .build()
             .apiInfo(apiInfo());
