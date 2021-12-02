@@ -1,20 +1,5 @@
 package com.cad.book.springboot.web;
 
-import com.cad.book.springboot.domain.posts.PostsRepository;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
-
-import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
-
 
 /**
  * 게시물 등록 기능 테스트 케이스
@@ -29,36 +14,36 @@ import static org.springframework.security.test.web.servlet.setup.SecurityMockMv
  * mvc.perform : 생성된 MockMvc 로 API 를 테스트한다.
  * 본문 영역은 문자열로 표현하기 위해 ObjectMapper 를 통해 문자열을 JSON 으로 변환
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) // 랜덤 포트로 테스트 진행
-public class PostsApiControllerTest {
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) // 랜덤 포트로 테스트 진행
+//public class PostsApiControllerTest {
 
-  @Autowired
-  private WebApplicationContext context;
-
-  private MockMvc mvc;
-
-  @LocalServerPort
-  private int port;
-
-  @Autowired
-  private TestRestTemplate restTemplate;
-
-  @Autowired
-  private PostsRepository postsRepository;
-
-  @After
-  public void tearDown() throws Exception {
-    postsRepository.deleteAll();
-  }
-
-  @Before
-  public void setup() {
-    mvc = MockMvcBuilders
-        .webAppContextSetup(context)
-        .apply(springSecurity())
-        .build();
-  }
+//  @Autowired
+//  private WebApplicationContext context;
+//
+//  private MockMvc mvc;
+//
+//  @LocalServerPort
+//  private int port;
+//
+//  @Autowired
+//  private TestRestTemplate restTemplate;
+//
+//  @Autowired
+//  private PostsRepository postsRepository;
+//
+//  @After
+//  public void tearDown() throws Exception {
+//    postsRepository.deleteAll();
+//  }
+//
+//  @Before
+//  public void setup() {
+//    mvc = MockMvcBuilders
+//        .webAppContextSetup(context)
+//        .apply(springSecurity())
+//        .build();
+//  }
 
 //  @Test
 //  @WithMockUser(roles="USER")
@@ -124,4 +109,4 @@ public class PostsApiControllerTest {
 //  }
 
 
-}
+//}

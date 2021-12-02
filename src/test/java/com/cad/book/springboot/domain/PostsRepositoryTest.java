@@ -1,23 +1,16 @@
 package com.cad.book.springboot.domain;
 
-import com.cad.book.springboot.domain.posts.PostsRepository;
-import org.junit.After;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
+//public class PostsRepositoryTest {
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class PostsRepositoryTest {
-
-  @Autowired
-  PostsRepository postsRepository;
-
-  @After
-  public void cleanup() {
-    postsRepository.deleteAll();
-  }
+//  @Autowired
+//  PostsRepository postsRepository;
+//
+//  @After
+//  public void cleanup() {
+//    postsRepository.deleteAll();
+//  }
 
 //  @Test
 //  public void open_saved_File() {
@@ -65,4 +58,4 @@ public class PostsRepositoryTest {
 //    assertThat(posts.getModifiedDate()).isAfter(now);
 //  }
 
-}
+//}
