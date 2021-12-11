@@ -14,7 +14,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r springboot-posts-api
+  - zip -r springboot-posts-api *
   - mkdir -p deploy
   - mv springboot-posts-api.zip deploy/springboot-posts-api.zip
 
