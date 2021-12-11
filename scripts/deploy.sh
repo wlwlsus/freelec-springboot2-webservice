@@ -9,16 +9,10 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> 현재 구동 중인 애플리케이션 pid 확인"
 
-#CURRENT_PID=$(pgrep -fl $PROJECT_NAME | grep jar | awk '{print $1}')
 CURRENT_PID=$(pgrep -fl springboot-posts-api | grep jar | awk '{print $1}')
 
 echo "현재 구동 중인 애플리케이션: $CURRENT_PID"
 
-# shellcheck disable=SC1073
-# shellcheck disable=SC1019
-# shellcheck disable=SC1009
-# shellcheck disable=SC1072
-# shellcheck disable=SC1020
 if [ -z "$CURRENT_PID"]; then
   echo "> 현재 구동 중인 애플리케이션이 없으므로 종료하지 않습니다."
 else
@@ -35,12 +29,11 @@ echo "> JAR_NAME: $JAR_NAME"
 
 echo "> $JAR_NAME 실행 권한 추가"
 
-chmod +x &
-JAR_NAME
+chmod +x &JAR_NAME
 
 echo "> $JAR_NAME 실행"
 
 nohup java -jar \
   -Dspring.config.location=classpath:/application.properties,classpath:/application-real.properties,/home/ec2-user/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties \
   -Dspring.profiles.active=real \
-  $JAR_NAME >$REPOSITORY/nohup.out 2>&1 &
+  $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
