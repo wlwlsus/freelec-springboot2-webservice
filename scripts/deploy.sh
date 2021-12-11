@@ -3,7 +3,7 @@
 REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=springboot-posts-api
 
-echo "> Build 파일 복사"
+echo "> Build 파일 복사2"
 
 cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
