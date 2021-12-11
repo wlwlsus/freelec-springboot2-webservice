@@ -29,8 +29,6 @@ public class ProfileControllerTest {
 
 		ResponseEntity<String> response = restTemplate.getForEntity("/profile", String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		System.out.println("check1"+response);
-		System.out.println("check2"+response.getBody());
-//		assertThat(response.getBody()).isEqualTo(expected);
+		assertThat(response.getBody()).isEqualTo(expected);
 	}
 }
