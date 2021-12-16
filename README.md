@@ -8,10 +8,11 @@
 ### - 스프링 부트에서 JPA로 데이터베이스를 다뤄보자
 
   - 이론 : [velog post](https://velog.io/@donsco/Spring-JPA)
-  - 실습 : []()
+  - 실습 : [velog post](https://velog.io/@donsco/Spring-JPA-%EC%8B%A4%EC%8A%B5)
 
 ### - 머스테치로 화면 구성하기
-
+  
+  - 이론 : [velog post](https://velog.io/@donsco/Spring-Mustache)
 ### - Spring Security와 OAuth 2.0으로 로그인 기능 구현하기
 
 ### - AWS 서버 환경을 만들어 보자 - AWS EC2
