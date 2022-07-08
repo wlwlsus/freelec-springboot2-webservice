@@ -1,6 +1,4 @@
 
-![image](https://user-images.githubusercontent.com/58021968/146653841-60a0f3b5-75fb-4986-a955-d5562137584b.png)
-
 
 ### - 스프링 부트에서 테스트 코드를 작성
 
