@@ -4,16 +4,10 @@
 
 ### - 스프링 부트에서 테스트 코드를 작성
 
-  - [velog post](https://velog.io/@donsco/Spring-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C)
-
 ### - 스프링 부트 JPA로 데이터베이스 사용
 
-  - 이론 : [velog post](https://velog.io/@donsco/Spring-JPA)
-  - 실습 : [velog post](https://velog.io/@donsco/Spring-JPA-%EC%8B%A4%EC%8A%B5)
-
 ### - 머스테치로 화면 구성
-  
-  - 이론 : [velog post](https://velog.io/@donsco/Spring-Mustache)
+
 ### - Spring Security와 OAuth 2.0으로 로그인 기능 구현
 
 ### - AWS 서버 환경 구축 - AWS EC2
